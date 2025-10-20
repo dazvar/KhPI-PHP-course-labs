@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 7: Cache</title>
+  <link rel="stylesheet" href="client-cache-css.php">
+  <style>.links a{display:block;margin:.5rem 0}</style>
+</head>
+<body>
+  <div class="box">
+    <h1>Лабораторна 7 — Кешування</h1>
+    <p class="timestamp">Використовуйте ці посилання для перевірки кешу в браузері (вкладка Network).</p>
+  </div>
+  <div class="links">
+    <h2>Клієнтське кешування (HTTP headers)</h2>
+    <a href="client-cache-css.php" target="_blank">CSS з Cache-Control/Expires</a>
+    <a href="client-cache-image.php" target="_blank">SVG з Cache-Control/Expires</a>
+
+    <h2>Серверне кешування у файл</h2>
+    <a href="generate-report.php" target="_blank">Генерація звіту (кеш у файлі 10 хв)</a>
+
+    <h2>Серверне кешування через статичну властивість</h2>
+    <a href="static-cache-demo.php" target="_blank">Демо статичного кешу (TTL 10 хв)</a>
+
+    <h2>Серверне кешування через сесію</h2>
+    <a href="session-cache.php" target="_blank">Демо кешу в сесії (TTL 10 хв)</a>
+  </div>
+</body>
+</html>

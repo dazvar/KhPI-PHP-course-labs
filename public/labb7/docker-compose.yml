@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  web:
+    image: php:8.2-apache
+    ports:
+      - "8090:80"
+    volumes:
+      - ../../:/var/www/html
+      - ./apache-vhost.conf:/etc/apache2/sites-available/000-default.conf:ro
+    command: bash -lc "a2enmod rewrite headers expires && apache2-foreground"
+    restart: unless-stopped
